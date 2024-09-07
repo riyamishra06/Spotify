@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+#main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color:black;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.0rem;
+    padding: 0.5rem 0.7rem;
+    opacity: 0.7;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i {
+    font-size: 1.25rem;
+    color:white;
+    line-height: 1rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.7rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.icons{
+    font-size:  2rem;
+   
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 0.7;
+}
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.6rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem 1.2rem;
+
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    padding:0.4rem;
+
+}
+.box-p2{
+    font-size:0.75rem;
+    opacity: 0.9;
+    padding:0.5rem
+}
+.budges{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.dark-badge{
+    background-color: #000;
+    color: white;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-item{
+    margin-left: 2rem;
+
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 160px;
+    border-radius: 0.5rem;
+    padding: 1rem ;
+    height: 250px;
+    margin: 1rem ;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-title{
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.7;
+    padding: 10px 0px;
+}
+.footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 80%;
+    height: 30%;
+ border-top: 1px solid white;
+ opacity: 0.4;
+}
+.music-player{
+    display: flex;
+}
+.music-player-left{
+    height: 100%;
+    width: 20%;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+}
+.music-img{
+    height:70%;
+    width: 39px;
+}
+.music-player-left h6{
+    color: grey;
+}
+.music-player-middle{
+    width: 50%;
+ opacity: 0.7;
+   
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.player-control-icon{
+    height: 1rem;
+    margin: 1rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
